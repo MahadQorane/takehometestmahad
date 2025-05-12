@@ -3,7 +3,7 @@ This project contains automated tests to validate api data
 # Project Structure
 Test Framework: JUnit 5 / Cucumber
 
-Language: Java 17+
+Language: Java 21+
 
 Build Tool: Maven
 

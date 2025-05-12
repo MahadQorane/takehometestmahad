@@ -39,7 +39,8 @@ mvn clean test -Dcucumber.filter.tags="@negative"
 # Assumptions
 Transmission date fields (transmission_start, transmission_end) follow ISO 8601 format (yyyy-MM-dd'T'HH:mm:ss.SSSZ)
 
-All campaigns being validated are already created and have a valid campaignId
+The schedule being validated are already created and have a valid channelId and 
+number of elements with valid elementId
 
 # External Dependencies
 REST-assured – for making and validating REST API calls

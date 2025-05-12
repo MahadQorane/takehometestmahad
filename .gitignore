@@ -36,3 +36,11 @@ pom.xml.next
 
 # macOS system file
 .DS_Store
+
+# Security-sensitive files
+*.pem
+*.key
+*.pub
+*.crt
+id_rsa
+id_rsa.pub

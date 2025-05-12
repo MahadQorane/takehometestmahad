@@ -44,7 +44,8 @@ number of elements with valid elementId
 
 # External Dependencies
 REST-assured – for making and validating REST API calls
-JUnit & Cucumber – for writing and organizing tests
+
+JUnit & Cucumber – for writing and organising tests
 
 # Known Limitations
 The test suite uses API’s free tier, which has a 1,000-request monthly limit. Exceeding this quota will cause tests to fail. If tests fail, check for this error:

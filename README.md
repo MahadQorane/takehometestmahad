@@ -12,7 +12,7 @@ HTTP Client: REST-assured
 # Prerequisites
 Test Framework: JUnit 5 / Cucumber
 
-Java 17 or higher installed and configured
+Java 21 or higher installed and configured
 
 Maven 3.5+ installed
 

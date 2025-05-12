@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
  * Cucumber test runner
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = "@wip",
+@CucumberOptions(
         features = "src/test/resources/features",
         glue = {"com.myibltest.stepdef"},
         plugin = {

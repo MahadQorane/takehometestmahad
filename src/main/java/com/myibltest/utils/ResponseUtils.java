@@ -62,7 +62,6 @@ public class ResponseUtils {
 
     /**
      * Get a value from the response using JsonPath
-     *
      * @param path the JsonPath expression
      * @return the value at the specified path
      */
@@ -72,7 +71,6 @@ public class ResponseUtils {
 
     /**
      * Get a string value from the response using JsonPath
-     *
      * @param path the JsonPath expression
      * @return the string value at the specified path
      */
@@ -82,7 +80,6 @@ public class ResponseUtils {
 
     /**
      * Get an integer value from the response using JsonPath
-     *
      * @param path the JsonPath expression
      * @return the integer value at the specified path
      */
@@ -137,7 +134,6 @@ public class ResponseUtils {
 
     /**
      * Get all items as a list of maps from an array response
-     *
      * @return list of items as maps
      */
     public List<Map<String, Object>> getJsonArray() {
@@ -171,7 +167,6 @@ public class ResponseUtils {
 
     /**
      * Get the response body as a string
-     *
      * @return the response body
      */
     public String getBodyAsString() {
@@ -180,7 +175,6 @@ public class ResponseUtils {
 
     /**
      * Get the response headers
-     *
      * @return the response headers
      */
     public Map<String, String> getHeaders() {
@@ -213,7 +207,6 @@ public class ResponseUtils {
 
     /**
      * Get the original RestAssured response
-     *
      * @return the RestAssured response
      */
     public Response getResponse() {

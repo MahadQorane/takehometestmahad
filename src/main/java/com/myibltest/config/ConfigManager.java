@@ -15,16 +15,13 @@ public class ConfigManager {
     private static final Properties properties = new Properties();
     private static ConfigManager instance;
 
-    /**
-     * Private constructor to enforce singleton pattern
-     */
+     // Private constructor to enforce singleton pattern
     private ConfigManager() {
         loadDefaultProperties();
     }
 
     /**
      * Get the singleton instance of ConfigManager
-     *
      * @return ConfigManager instance
      */
     public static synchronized ConfigManager getInstance() {
@@ -52,22 +49,7 @@ public class ConfigManager {
     }
 
     /**
-     * Load properties from a file
-     *
-     * @param filePath path to the properties file
-     */
-    public void loadProperties(String filePath) {
-        try (FileInputStream fis = new FileInputStream(filePath)) {
-            properties.load(fis);
-            LOGGER.info("Properties loaded from {}", filePath);
-        } catch (IOException e) {
-            LOGGER.error("Failed to load properties from {}: {}", filePath, e.getMessage());
-        }
-    }
-
-    /**
      * Get a property value
-     *
      * @param key property key
      * @return property value or null if not found
      */
@@ -75,30 +57,9 @@ public class ConfigManager {
         return properties.getProperty(key);
     }
 
-    /**
-     * Get a property value with default
-     *
-     * @param key property key
-     * @param defaultValue default value if property is not found
-     * @return property value or default value if not found
-     */
-    public String getProperty(String key, String defaultValue) {
-        return properties.getProperty(key, defaultValue);
-    }
-
-    /**
-     * Set a property value
-     *
-     * @param key property key
-     * @param value property value
-     */
-    public void setProperty(String key, String value) {
-        properties.setProperty(key, value);
-    }
 
     /**
      * Get property as integer
-     *
      * @param key property key
      * @param defaultValue default value if property is not found or not a valid integer
      * @return property value as integer or default value

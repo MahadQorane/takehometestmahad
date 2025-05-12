@@ -9,7 +9,6 @@ public class ParameterTypes {
 
     /**
      * Define a boolean parameter type for Cucumber expressions
-     *
      * @param value the string value "true" or "false"
      * @return a boolean value
      */

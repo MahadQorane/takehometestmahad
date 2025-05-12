@@ -4,16 +4,12 @@ package com.myibltest.utils.paths;
  * Class to hold JSON path constants
  */
 public class JsonPaths {
-    /**
-     * Root paths
-     */
+    // Root paths
     public static final String SCHEDULE = "schedule";
     public static final String SCHEDULE_CHANNEL = "schedule.channel";
     public static final String SCHEDULE_ELEMENTS = "schedule.elements";
 
-    /**
-     * Channel paths
-     */
+    // Channel paths
     public static final String CHANNEL_ID = "schedule.channel.id";
     public static final String CHANNEL_TYPE = "schedule.channel.type";
     public static final String CHANNEL_TITLE = "schedule.channel.title";
@@ -21,9 +17,7 @@ public class JsonPaths {
     public static final String CHANNEL_MASTER_BRAND_ID = "schedule.channel.master_brand_id";
     public static final String CHANNEL_MASTER_BRAND_TITLE = "schedule.channel.master_brand_title";
 
-    /**
-     * Element paths
-     */
+     // Element paths
     public static final String ELEMENT_ID = "schedule.elements[].id";
     public static final String ELEMENT_SCHEDULED_START = "schedule.elements[].scheduled_start";
     public static final String ELEMENT_SCHEDULED_END = "schedule.elements[].scheduled_end";
@@ -39,9 +33,7 @@ public class JsonPaths {
     public static final String ELEMENT_TYPE = "schedule.elements[].type";
     public static final String ELEMENT_EVENTS = "schedule.elements[].events";
 
-    /**
-     * Episode paths
-     */
+     // Episode paths
     public static final String EPISODE = "schedule.elements[].episode";
     public static final String EPISODE_ID = "schedule.elements[].episode.id";
     public static final String EPISODE_LIVE = "schedule.elements[].episode.live";
@@ -68,9 +60,7 @@ public class JsonPaths {
     public static final String EPISODE_RELEASE_DATE = "schedule.elements[].episode.release_date";
     public static final String EPISODE_RELEASE_DATE_TIME = "schedule.elements[].episode.release_date_time";
 
-    /**
-     * Version paths
-     */
+    // Version paths
     public static final String VERSION = "schedule.elements[].episode.versions[]";
     public static final String VERSION_HD = "schedule.elements[].episode.versions[].hd";
     public static final String VERSION_ID = "schedule.elements[].episode.versions[].id";
@@ -89,9 +79,7 @@ public class JsonPaths {
     public static final String VERSION_FIRST_BROADCAST = "schedule.elements[].episode.versions[].first_broadcast";
     public static final String VERSION_FIRST_BROADCAST_DATE_TIME = "schedule.elements[].episode.versions[].first_broadcast_date_time";
 
-    /**
-     * Event paths - use with String.format(VERSION_EVENT_NAME, elementIndex, versionIndex, eventIndex)
-     */
+    // Event paths - use with String.format(VERSION_EVENT_NAME, elementIndex, versionIndex, eventIndex)
     public static final String VERSION_EVENT = "schedule.elements[%d].episode.versions[%d].events[%d]";
     public static final String VERSION_EVENT_NAME = "schedule.elements[%d].episode.versions[%d].events[%d].name";
     public static final String VERSION_EVENT_OFFSET = "schedule.elements[%d].episode.versions[%d].events[%d].offset";

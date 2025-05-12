@@ -3,7 +3,7 @@ Feature: task_ibl episode type test
   I want to validate the IBL test API
   So that I can ensure the API is working correctly
 
-  @regression
+  @regression @wip
   Scenario: ID are not null or empty and episode type is always episode
     Given the API base URL is set to "https://testapi.io/api/RMSTest"
     When I send a GET request to endpoint "/ibltest"
